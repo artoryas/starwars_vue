@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <router-view class="margin-top"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from '@/components/Header';
+import M from 'materialize-css';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header
+  },
+  mounted(){
+    M.AutoInit();
   }
 }
 </script>
 
 <style>
-#app {
+ #app{
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
+ }
+ .margin-top{
+   margin-top: 20px;
+ }
+span{
+    font-weight: bold;
+}
+h2{
+  margin-top: 0 !important;
 }
 </style>
