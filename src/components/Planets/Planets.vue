@@ -55,6 +55,7 @@ export default {
     methods:{
         showPlanet(item){
             this.isLoadingItem = true;
+            item.url = item.url.slice(0,4) + 's' + item.url.slice(4);
             fetch(item.url)
                 .then(res => res.json())
                 .then(body => {
