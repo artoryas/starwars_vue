@@ -15,7 +15,7 @@
             </div>
             <div class="card-stacked">
                 <div class="card-content">
-                        <h2>{{starship.name}}</h2>
+                        <h2 class="flow-text">{{starship.name}}</h2>
                         <p>Модель: <span>{{starship.model}}</span> </p>
                         <p>Классификация корабля: <span>{{starship.starship_class}}</span></p>
                         <p>Производитель: <span>{{starship.manufacturer}}</span></p>

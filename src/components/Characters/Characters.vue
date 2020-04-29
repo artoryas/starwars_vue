@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div class="container">
         <SearchBar 
             @searchValue="searchChar"/>
         <div class="row">
-            <div class="col s4">
-                <img src="@/assets/loader.gif" alt="" v-if="isLoading" class="loader">
+            <div class="col s12 m4">
+                <img src="../../assets/loader.gif" alt="" v-if="isLoading" class="loader">
                 <ItemList 
                     v-else
                     v-bind:data="data"
@@ -13,8 +13,8 @@
                     v-bind:pages="pages"
                     @showPage="showPage"/>
             </div>
-            <div class="col s6">
-                <img src="@/assets/loader.gif" alt="" v-if="isLoadingItem">
+            <div class="col s12 m8">
+                <img src="../../assets/loader.gif" alt="" v-if="isLoadingItem">
                 <CharacterView
                     v-else
                     v-bind:char="char"/>
@@ -24,10 +24,10 @@
 </template>
 
 <script>
-import ItemList from '@/views/ItemList';
+import ItemList from '../../views/ItemList';
 import CharacterView from './CharacterView';
-import SearchBar from '@/views/SearchBar';
-import Pagination from '@/views/Pagination';
+import SearchBar from '../../views/SearchBar';
+import Pagination from '../../views/Pagination';
 
 export default {
     data(){
@@ -56,6 +56,7 @@ export default {
     methods:{
         showChar(item){
             this.isLoadingItem = true;
+            console.log(item);
             if(item.url.charAt(4) === ':'){
                 item.url = item.url.slice(0,4) + 's' + item.url.slice(4);
             }

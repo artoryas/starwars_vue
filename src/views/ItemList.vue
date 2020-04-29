@@ -28,9 +28,12 @@ export default {
     }
 }
 </script>
-<style>
-a{
-    cursor: pointer;
-}
-
+<style lang="stylus">
+a
+    cursor: pointer
+.collection
+    .collection-item.active
+        background-color: #212121
+    a.collection-item
+        color: #212121
 </style>

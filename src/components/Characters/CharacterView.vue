@@ -15,7 +15,7 @@
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
-                            <h2>{{char.name}}</h2>
+                            <h2 class="flow-text">{{char.name}}</h2>
                             <p>Пол: <span>{{char.gender}}</span></p>
                             <p>Дата рождения: <span>{{char.birth_year}}</span></p>
                             <p>Рост: <span>{{char.height}}</span></p>

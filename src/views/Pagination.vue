@@ -22,8 +22,8 @@ export default {
     }
 }
 </script>
-<style>
-    .pagination li.active{
-        background-color:rgb(38, 166, 154);
-    }
+<style lang="stylus">
+.pagination
+    li.active
+        background-color: #212121
 </style>

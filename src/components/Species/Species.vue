@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div class="container">
         <SearchBar 
             @searchValue="searchSpecies"/>  
         <div class="row">
-            <div class="col s4">
-                <img src="@/assets/loader.gif" alt="" v-if="isLoading">
+            <div class="col m4 s12">
+                <img src="../../assets/loader.gif" alt="" v-if="isLoading">
                 <ItemList 
                     v-else
                     v-bind:data="data"
@@ -13,8 +13,8 @@
                     v-bind:pages="pages"
                     @showPage="showPage"/>
             </div>
-            <div class="col s6">
-                <img src="@/assets/loader.gif" alt="" v-if="isLoadingItem">
+            <div class="col m6 s12">
+                <img src="../../assets/loader.gif" alt="" v-if="isLoadingItem">
                 <SpeciesView
                     v-else
                     v-bind:species="species"/>
@@ -24,10 +24,10 @@
 </template>
 
 <script>
-import ItemList from '@/views/ItemList';
+import ItemList from '../../views/ItemList';
 import SpeciesView from './SpeciesView';
-import SearchBar from '@/views/SearchBar';
-import Pagination from '@/views/Pagination';
+import SearchBar from '../../views/SearchBar';
+import Pagination from '../../views/Pagination';
 
 export default {
     data(){

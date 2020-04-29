@@ -16,7 +16,7 @@
             </div>
             <div class="card-stacked">
                 <div class="card-content">
-                        <h2>{{species.name}}</h2>
+                        <h2 class="flow-text">{{species.name}}</h2>
                         <p>Классификация: <span>{{species.classification}}</span></p>
                         <p>Средний рост: <span>{{species.average_height}}</span></p>
                         <p>Цвет кожи: <span>{{species.skin_colors}}</span></p>

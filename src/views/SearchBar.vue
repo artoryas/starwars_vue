@@ -1,14 +1,14 @@
 <template>
     <form @submit.prevent="onSubmit">
         <div class="valign-wrapper row">
-            <div class="input-field col s4">
+            <div class="input-field col m4 s10">
                 <input type="text" v-model="value" id="search" class="grey-text text-darken-4">
                 <label for="search" class="grey-text text-darken-4">Поиск</label>
             </div>
             <button type="submit" class="btn waves-effect waves-light grey darken-4">
                 Поиск
             </button>
-            <div class="col s8"></div>
+            <div class="col m8"></div>
         </div>
     </form>
 </template>

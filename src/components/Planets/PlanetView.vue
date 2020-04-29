@@ -15,7 +15,7 @@
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
-                            <h2>{{planet.name}}</h2>
+                            <h2 class="flow-text">{{planet.name}}</h2>
                             <p>Период вращения: <span>{{planet.rotation_period}}</span></p>
                             <p>Период вращения вокруг орбиты: <span>{{planet.orbital_period}}</span></p>
                             <p>Диаметр: <span>{{planet.diameter}}</span></p>
