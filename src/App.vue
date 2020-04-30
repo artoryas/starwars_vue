@@ -22,20 +22,35 @@ export default {
 
 <style lang="stylus">
  #app
-  font-family: Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  color: #2c3e50
-  width: 100%
+  font-family Avenir, Helvetica, Arial, sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  color #2c3e50
+  width 100%
  
  .margin-top
-   margin-top: 20px
+   margin-top 20px
  
 span
-    font-weight: bold
+    font-weight bold
+
+.brand-logo 
+  height 64px
+  display flex !important 
+  align-items center
+
+.logo
+    height calc(100% - 14px)
+    display block
+    margin auto 0
+
 @media (max-width 600px)
   .card.horizontal
     flex-direction column
     .card-image
       max-width 100% !important
+  .brand-logo
+      height 56px
+
+
 </style>

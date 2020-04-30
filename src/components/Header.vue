@@ -3,7 +3,7 @@
         <nav class="nav-wrapper grey darken-4">
             <div class="container">
                 <router-link to="/" class="brand-logo">
-                    STAR WARS
+                    <img class="logo" src="https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_stacked-336c62367939.png" alt="">
                 </router-link>
                 <a href="javascript:;" class="sidenav-trigger" data-target="mobile-links">
                     <i class="material-icons">menu</i>
