@@ -66,12 +66,11 @@ export default {
     },
     methods:{
         closeNav(){
-            this.instance.close()
+            let sidenav = document.querySelector('.sidenav');
+            M.Sidenav.init(sidenav).close()
         }
     },
     mounted(){
-      let sidenav = document.querySelector('.sidenav');
-      this.instance = M.Sidenav.init(sidenav);
     }
 }
 </script>
