@@ -33,22 +33,22 @@
             </div> 
         </nav>
         <ul class="sidenav" id="mobile-links">
-            <li>
+            <li v-on:click="closeNav()">
                 <router-link to="./characters">
                     Персонажи
                 </router-link>
             </li>
-            <li>
+            <li v-on:click="closeNav()">
                 <router-link to="./planets">
                     Планеты
                 </router-link>
             </li>
-            <li>
+            <li v-on:click="closeNav()">
                 <router-link to="./species">
                     Расы
                 </router-link>
             </li>
-            <li>
+            <li v-on:click="closeNav()">
                 <router-link to="./starships">
                     Звездные корабли
                 </router-link>
@@ -57,8 +57,22 @@
     </div>
 </template>
 <script>
+import M from 'materialize-css';
 export default {
-    
+    data(){
+        return {
+            instance: Array
+        }
+    },
+    methods:{
+        closeNav(){
+            this.instance.close()
+        }
+    },
+    mounted(){
+      let sidenav = document.querySelector('.sidenav');
+      this.instance = M.Sidenav.init(sidenav);
+    }
 }
 </script>
 <style lang="stylus">

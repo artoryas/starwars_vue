@@ -33,4 +33,9 @@ export default {
  
 span
     font-weight: bold
+@media (max-width 600px)
+  .card.horizontal
+    flex-direction column
+    .card-image
+      max-width 100% !important
 </style>
