@@ -59,11 +59,6 @@
 <script>
 import M from 'materialize-css';
 export default {
-    data(){
-        return {
-            instance: Array
-        }
-    },
     methods:{
         closeNav(){
             let sidenav = document.querySelector('.sidenav');
@@ -74,6 +69,3 @@ export default {
     }
 }
 </script>
-<style lang="stylus">
-
-</style>

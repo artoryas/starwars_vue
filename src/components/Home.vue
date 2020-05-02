@@ -69,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <p class="flow-text center">Создано с использованием Vue.js, MaterializeCSS, Babel, Stylus</p>
+        <p class="flow-text center">Создано с использованием Vue.js, MaterializeCSS, Stylus</p>
     </div>
 </template>
 <style lang="stylus">

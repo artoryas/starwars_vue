@@ -54,5 +54,8 @@
   ],
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:artoryas/starwars_vue.git",
+  "license": "MIT"
 }

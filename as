@@ -1,4 +1,0 @@
-// {
-//     "presets": ["@vue/babel-preset-jsx"]
-//   }
-  
